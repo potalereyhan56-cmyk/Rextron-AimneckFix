@@ -1,5 +1,4 @@
 {
-  "remarks": "Rextron — AimNeck [FixedPing⚡]",
   "inbounds": [
     {
       "listen": "127.0.0.1",
@@ -36,17 +35,27 @@
       "tag": "http"
     }
   ],
+  "log": {
+    "access": "/private/var/mobile/Containers/Shared/AppGroup/5D4BDA23-16E0-4EE3-BEDC-B5C414F4CF26/Library/Application Support/Xray/logs/access.log",
+    "dnsLog": true,
+    "loglevel": "Warning"
+  },
   "outbounds": [
     {
       "protocol": "hysteria",
       "settings": {
-        "address": "proxy-eu.dripwire.cc",
+        "address": "proxy-br.dripwire.cc",
         "port": 443,
         "version": 2
       },
       "streamSettings": {
+        "finalmask": {
+          "quicParams": {
+            "disableChromeParrot": true
+          }
+        },
         "hysteriaSettings": {
-          "auth": "3902602728:0efa375f415d8042",
+          "auth": "8529083485:nhccqbcuqz856k98",
           "version": 2
         },
         "network": "hysteria",
@@ -55,13 +64,8 @@
           "alpn": [
             "h3"
           ],
-          "serverName": "proxy-eu.dripwire.cc",
+          "serverName": "proxy-br.dripwire.cc",
           "show": false
-        },
-        "finalmask": {
-          "quicParams": {
-            "disableChromeParrot": true
-          }
         }
       },
       "tag": "proxy"
@@ -71,6 +75,7 @@
       "tag": "direct"
     }
   ],
+  "remarks": "Rextron — Aimneck [FixPing🔥]",
   "routing": {
     "domainStrategy": "AsIs",
     "rules": [
