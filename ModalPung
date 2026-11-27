@@ -44,7 +44,7 @@
     {
       "protocol": "hysteria",
       "settings": {
-        "address": "proxy-br.dripwire.cc",
+        "address": "proxy-ind.dripwire.cc",
         "port": 443,
         "version": 2
       },
@@ -64,7 +64,7 @@
           "alpn": [
             "h3"
           ],
-          "serverName": "proxy-br.dripwire.cc",
+          "serverName": "proxy-ind.dripwire.cc",
           "show": false
         }
       },
@@ -75,7 +75,7 @@
       "tag": "direct"
     }
   ],
-  "remarks": "Rextron — Aimneck [FixPing🔥]",
+  "remarks": "Rextron-India — [AimNeck⚡]",
   "routing": {
     "domainStrategy": "AsIs",
     "rules": [
