@@ -42,30 +42,26 @@
   },
   "outbounds": [
     {
-      "protocol": "hysteria",
+      "protocol": "socks",
       "settings": {
-        "address": "proxy-ind.dripwire.cc",
-        "port": 443,
-        "version": 2
+        "servers": [
+          {
+            "address": "serv.aimhack.shop",
+            "port": 8443,
+            "users": [
+              {
+                "pass": "AMHK-6F0E-5913-FF89",
+                "user": "AMHK-6F0E-5913-FF89"
+              }
+            ]
+          }
+        ]
       },
       "streamSettings": {
-        "finalmask": {
-          "quicParams": {
-            "disableChromeParrot": true
-          }
-        },
-        "hysteriaSettings": {
-          "auth": "8529083485:nhccqbcuqz856k98",
-          "version": 2
-        },
-        "network": "hysteria",
+        "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "alpn": [
-            "h3"
-          ],
-          "serverName": "proxy-ind.dripwire.cc",
-          "show": false
+          "serverName": "serv.aimhack.shop"
         }
       },
       "tag": "proxy"
@@ -75,23 +71,79 @@
       "tag": "direct"
     }
   ],
-  "remarks": "Rextron-India — [AimNeck⚡]",
+  "remarks": "Rextron-Connect — [Aimbot⚡]",
   "routing": {
     "domainStrategy": "AsIs",
     "rules": [
       {
+        "domain": [
+          "full:clientbp.ggpolarbear.com",
+          "full:loginbp.ggpolarbear.com",
+          "full:core-bs.ggpolarbear.com",
+          "full:core-bs.freefiremobile.com",
+          "full:core-tata.freefireind.in",
+          "full:core-gmc.freefiremobile.com",
+          "full:client.ind.freefiremobile.com",
+          "full:client.us.freefiremobile.com",
+          "full:sgnetwork.ggblueshark.com",
+          "full:menetwork.ggblueshark.com",
+          "full:bdnetwork.ggpolarbear.com",
+          "full:100067.connect.garena.com",
+          "full:100067.msdk.garena.com",
+          "full:clientbp.ppmainecoonghj.com",
+          "full:loginbp.ppmainecoonghj.com",
+          "full:ffmconnect.ppmainecoonghj.com",
+          "full:ffmmsdk.ppmainecoonghj.com"
+        ],
+        "outboundTag": "proxy",
+        "type": "field"
+      },
+      {
         "network": "tcp",
         "outboundTag": "proxy",
-        "port": "39000-39999"
+        "port": "39000-39999",
+        "type": "field"
       },
       {
         "network": "udp",
         "outboundTag": "proxy",
-        "port": "10000-10999"
+        "port": "10000-10999",
+        "type": "field"
+      },
+      {
+        "domain": [
+          "full:event-vodka.freefireind.in",
+          "full:indevent.ggblueshark.com",
+          "full:sgevent.ggblueshark.com",
+          "full:meevent.ggblueshark.com",
+          "full:theevent.ggblueshark.com",
+          "full:sacevent.ggblueshark.com",
+          "full:idevent.ggblueshark.com",
+          "full:bdevent.ggpolarbear.com",
+          "full:gin.freefireind.in",
+          "full:gin.freefiremobile.com",
+          "full:vodka.freefireind.in",
+          "full:dl.castle.freefiremobile.com",
+          "full:dl.cdn.freefiremobile.com",
+          "full:dl-core.cdn.freefiremobile.com",
+          "full:dl.gmc.freefiremobile.com",
+          "full:dl.aw.freefiremobile.com",
+          "full:dl.dir.freefiremobile.com",
+          "full:dl.bs.freefiremobile.com",
+          "full:dl.ak.freefiremobile.com",
+          "full:dl-sg-production.freefiremobile.com",
+          "full:dl-tata.freefireind.in",
+          "full:dl-bs.ggpolarbear.com",
+          "domain:freefiremobile-a.akamaihd.net",
+          "full:client.aimhack.shop"
+        ],
+        "outboundTag": "direct",
+        "type": "field"
       },
       {
         "network": "tcp,udp",
-        "outboundTag": "direct"
+        "outboundTag": "direct",
+        "type": "field"
       }
     ]
   }
